@@ -1,8 +1,6 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 setup(
     name='transformers',
     version=0.1,
-    packages=['transformers'],
-    package_dir={'transformers': 'transformers'},
-    include_package_data=False
+    packages=find_packages()
 )
